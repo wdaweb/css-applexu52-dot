@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #bearface {
+      width: 230px;
+      height: 230px;
+      margin: 200px auto;
+      border-radius: 50%;
+      background-color: #000;
+      position: relative;
+    }
+
+    #bearface::before {
+      content: "";
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background-color: #f00;
+      position: absolute;
+      top: 84px;
+      left: -10px;
+    }
+
+    #bearface::after {
+      content: "";
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background-color: #f00;
+      position: absolute;
+      top: 84px;
+      right: -10px;
+    }
+
+    #bear-ear {
+      width: 22px;
+      height: 22px;
+      border: 7px solid #000;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 18px;
+    }
+
+    #bear-ear::before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      border: 7px solid #000;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      z-index: 2;
+      top: -7px;
+      right: -166px;
+    }
+
+
+    #bear-eyes {
+      width: 29px;
+      height: 29px;
+      border: 7px solid #fff;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      z-index: 2;
+      top: 44px;
+      left: 51px;
+    }
+
+    #bear-eyes::before {
+      content: "";
+      width: 29px;
+      height: 29px;
+      border: 7px solid #fff;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      z-index: 2;
+      top: -7px;
+      right: -88px;
+    }
+
+    #bear-nose {
+      width: 92px;
+      height: 66px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 86px;
+      left: 69px;
+    }
+
+    #bear-nose::before {
+      content: "";
+      width: 24px;
+      height: 15px;
+      border-radius: 50%;
+      background: #000;
+      position: absolute;
+      top: 5px;
+      left: 33px;
+      z-index: 1;
+    }
+
+    #bear-nose::after {
+      content: "";
+      width: 60px;
+      height: 22px;
+      border-radius: 50%;
+      background: #000;
+      position: absolute;
+      top: 30px;
+      left: 17px;
+      z-index: 1;
+    }
+
+    #bear-neck-R {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      transform: skew(-52deg);
+      position: absolute;
+      top: 170px;
+      right: 78px;
+    }
+
+    #bear-neck-L {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      transform: skew(52deg);
+      position: absolute;
+      top: 170px;
+      left: 78px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bearface">
+    <div id="bear-ear"></div>
+    <div id="bear-eyes"></div>
+    <div id="bear-nose"></div>
+    <div id="bear-neck-L"></div>
+    <div id="bear-neck-R"></div>
+  </div>
+</body>
+
+</html>
